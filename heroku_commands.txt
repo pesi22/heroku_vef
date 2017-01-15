@@ -1,0 +1,62 @@
+C:\Users\Petur>heroku login
+Enter your Heroku credentials.
+Email: petur.petursson@outlook.com
+Password (typing will be hidden):
+Logged in as petur.petursson@outlook.com
+
+C:\Users\Petur>cd heroku_vef
+The system cannot find the path specified.
+
+C:\Users\Petur>git clone https://github.com/pesi22/heroku_vef
+Cloning into 'heroku_vef'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+C:\Users\Petur>cd heroku_vef
+
+C:\Users\Petur\heroku_vef>heroku create
+Creating app... done, tranquil-hamlet-14650
+https://tranquil-hamlet-14650.herokuapp.com/ | https://git.heroku.com/tranquil-hamlet-14650.git
+
+C:\Users\Petur\heroku_vef>git push heroku master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 257 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> PHP app detected
+remote:
+remote:  !     WARNING: No 'composer.json' found.
+remote:        Using 'index.php' to declare app type as PHP is considered legacy
+remote:        functionality and may lead to unexpected behavior.
+remote:
+remote: -----> Bootstrapping...
+remote: -----> Installing platform packages...
+remote:        NOTICE: No runtime required in composer.lock; using PHP ^5.5.17
+remote:        - apache (2.4.20)
+remote:        - nginx (1.8.1)
+remote:        - php (5.6.29)
+remote: -----> Installing dependencies...
+remote:        Composer version 1.2.4 2016-12-06 22:00:51
+remote: -----> Preparing runtime environment...
+remote:        NOTICE: No Procfile, using 'web: vendor/bin/heroku-php-apache2'.
+remote: -----> Checking for additional extensions to install...
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 13.5M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://tranquil-hamlet-14650.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/tranquil-hamlet-14650.git
+ * [new branch]      master -> master
+
+C:\Users\Petur\heroku_vef>heroku open
+
+C:\Users\Petur\heroku_vef>
